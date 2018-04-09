@@ -1,2 +1,2 @@
 # terminal_app_YMC
-A bootcamp coder simulation command line game made in Ruby
+A bootcamp coder simulation game made in Ruby, runs in command line
