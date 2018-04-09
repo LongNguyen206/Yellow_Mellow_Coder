@@ -60,11 +60,14 @@ class Game
         run_text("> You are new to the world of programming and it is as difficult as it sounds. \n",0.03,0) 
         flash(" ...",2)
         puts "\n"
-        run_text("> Your goal is to teach yourself all the relevant coding knowledge and be ready for a job as a fullstack developer!\n",0.03,0)
+        run_text("> You will have to learn all the relevant coding knowledge while trying to\n\s\smanage your finances and motivation\n",0.03,0)
+        flash(" ...",2)
+        puts "\n"
+        run_text("> Ultimately, your goal is to reach the skill level that qualifies\n\s\syou as a fullstack developer in a shortest time possible!\n",0.03,0) 
         flash(" ...",2)
         puts "\n"
         run_text("> Good luck!!!\n",0.03,0)
-        flash(" ...",2)
+        flash(" ...",4)
         puts `clear`
     end
 
@@ -216,7 +219,7 @@ class Game
         if @@day == 1
             @money = 50
             @burnout_total = 0
-            @skill_total = 0
+            @skill_total = 1670
             @job = "none"
             @activity = "none"
             @living_condition = "a broke student"
