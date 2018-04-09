@@ -54,13 +54,13 @@ class Game
         run_text("> Hello, #{@new_player}!\n",0.03,0)
         flash(" ...",2)
         puts "\n"
-        run_text("> Welcome to Mellow Yellow Coder!\n",0.03,0)
+        run_text("> Welcome to Yellow Mellow Coder!\n",0.03,0)
         flash(" ...",2)
         puts "\n"
-        run_text("> You are new to the world of programming and you have multiple stages to go through before you can officially become a Coding Beast. \n",0.03,0) 
+        run_text("> You are new to the world of programming and it is as difficult as it sounds. \n",0.03,0) 
         flash(" ...",2)
         puts "\n"
-        run_text("> Your goal is to become a proficient programmer and get a job in a tech corporation!\n",0.03,0)
+        run_text("> Your goal is to teach yourself all the relevant coding knowledge and be ready for a job as a fullstack developer!\n",0.03,0)
         flash(" ...",2)
         puts "\n"
         run_text("> Good luck!!!\n",0.03,0)
@@ -214,7 +214,7 @@ class Game
 
     def day_1_stats
         if @@day == 1
-            @money = 215
+            @money = 50
             @burnout_total = 0
             @skill_total = 0
             @job = "none"
