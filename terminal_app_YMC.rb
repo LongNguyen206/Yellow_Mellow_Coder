@@ -219,7 +219,7 @@ class Game
         if @@day == 1
             @money = 50
             @burnout_total = 0
-            @skill_total = 1670
+            @skill_total = 0
             @job = "none"
             @activity = "none"
             @living_condition = "a broke student"
