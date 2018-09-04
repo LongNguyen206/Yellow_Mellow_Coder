@@ -55,13 +55,13 @@ class Game
             run_text("> Welcome to Yellow Mellow Coder!\n",0.03,0)
             flash(" ...",2)
             puts "\n"
-            run_text("> You are new to the world of programming and it is as difficult as it sounds. \n",0.03,0) 
+            run_text("> You are new to the world of programming and it is not gonna be easy!\n",0.03,0) 
             flash(" ...",2)
             puts "\n"
-            run_text("> You will have to learn all the relevant coding knowledge while trying to\n\s\smanage your finances and motivation\n",0.03,0)
+            run_text("> The aim is to improve your coding skills while managing\n\s\syour motivation and finances\n",0.03,0)
             flash(" ...",2)
             puts "\n"
-            run_text("> Ultimately, your goal is to reach the skill level that qualifies\n\s\syou as a fullstack developer in a shortest time possible!\n",0.03,0) 
+            run_text("> Ultimately, your goal is to reach the skill level that qualifies\n\s\syou as a fullstack developer. Let's see how long it will take you!\n",0.03,0) 
             flash(" ...",2)
             puts "\n"
             run_text("> Good luck!!!\n",0.03,0)
@@ -180,7 +180,7 @@ class Game
         puts "\n\s6. Your goal is to reach the 'job ready' coding skill level without burning out"
         puts "\s7. Once you go into bank account overdraft, your only available option will be to go to work"
         puts "\s8. Your burnout level will also determine which activities you can undertake"
-        puts "\s9. " + "Paid entertainment".underline + " is a faster way to decrease your burnout, but they come at a price.\n\s\s\s\sAnother option would be to use the 'Day off' to reduce your burnout without any cost"
+        puts "\s9. " + "Doing something fun".underline + " is a faster way to decrease your burnout, but the activities come at a price.\n\s\s\s\sAnother option would be to use the 'Day off' to reduce your burnout without any cost"
         puts "\s10. Once unlocked, you can participate in " + "hackathons".underline + " to greatly increase your coding skills.\n\s\s\s\sThe participation has a fixed entry cost ($100), however the burnout from participation\n\s\s\s\sand the coding skill gains are random (but not the multiplier)"
         puts "\s11. The game will end if your burnout is at 100% and you do not have means to\n\s\s\s\ssurvive another day"
         puts "\n\t\t\t\t(press Space to continue)"
@@ -405,7 +405,7 @@ class Game
         puts "\n\s[1] Learn to code! -> " + "+BO ".red + "+CS".green
         puts "\s[2] Go to work -> " + "+BO ".red + "+$$$".green
         puts "\s[3] Participate in a hackathon (requirements: at least " + "Ruby".white_on_red + " knowledge and " + "$100".white_on_red + ")-> " + "+BO ".red + "+CS ".green + "-$$$".red
-        puts "\s[4] Paid entertainment = best entertainment! -> " + "-BO ".green + "-$$$".red
+        puts "\s[4] Do something FUN! -> " + "-BO ".green + "-$$$".red
         puts "\s[5] Take a day off! -> " + "-BO".green
         puts "\s[0] Go back"
         loop do
@@ -443,7 +443,7 @@ class Game
                 end
             elsif activity_choice == '4'
                 clear_lines(10)
-                puts "\n\s[4] Paid entertainment = best entertainment!: "
+                puts "\n\s[4] Do something FUN: "
                 entertainment_menu
             elsif activity_choice == '5'
                 run_text("\n\s" + "Chill mode on\n".black_on_green,0.03,0)
