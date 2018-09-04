@@ -1,0 +1,46 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    bar-of-progress (0.1.3)
+    colored (1.2)
+    command_line_reporter (4.0.0)
+      colored (>= 1.2)
+    equatable (0.5.0)
+    hitimes (1.3.0)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    necromancer (0.4.0)
+    pastel (0.7.2)
+      equatable (~> 0.5.0)
+      tty-color (~> 0.4.0)
+    public_suffix (3.0.3)
+    timers (4.1.2)
+      hitimes
+    tty-color (0.4.3)
+    tty-cursor (0.6.0)
+    tty-prompt (0.17.0)
+      necromancer (~> 0.4.0)
+      pastel (~> 0.7.0)
+      timers (~> 4.0)
+      tty-cursor (~> 0.6.0)
+      tty-reader (~> 0.4.0)
+    tty-reader (0.4.0)
+      tty-cursor (~> 0.6.0)
+      tty-screen (~> 0.6.4)
+      wisper (~> 2.0.0)
+    tty-screen (0.6.5)
+    wisper (2.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bar-of-progress
+  command_line_reporter
+  launchy
+  tty-prompt
+
+BUNDLED WITH
+   1.16.2

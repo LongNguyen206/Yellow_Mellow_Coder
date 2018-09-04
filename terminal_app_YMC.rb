@@ -18,8 +18,6 @@ class Game
                               :partial_indicator => "▤".cyan,
                               :incomplete_indicator => "□".blue,
                               :precision => 20)
-    def initialize
-    end 
     
     def flash(text,count)
         count.times do
@@ -49,26 +47,27 @@ class Game
         if @new_player == 'B'
             system('clear')
             start_new_game
+        else
+            puts `clear`
+            run_text("> Hello, #{@new_player}!\n",0.03,0)
+            flash(" ...",2)
+            puts "\n"
+            run_text("> Welcome to Yellow Mellow Coder!\n",0.03,0)
+            flash(" ...",2)
+            puts "\n"
+            run_text("> You are new to the world of programming and it is as difficult as it sounds. \n",0.03,0) 
+            flash(" ...",2)
+            puts "\n"
+            run_text("> You will have to learn all the relevant coding knowledge while trying to\n\s\smanage your finances and motivation\n",0.03,0)
+            flash(" ...",2)
+            puts "\n"
+            run_text("> Ultimately, your goal is to reach the skill level that qualifies\n\s\syou as a fullstack developer in a shortest time possible!\n",0.03,0) 
+            flash(" ...",2)
+            puts "\n"
+            run_text("> Good luck!!!\n",0.03,0)
+            flash(" ...",4)
+            puts `clear`
         end
-        puts `clear`
-        run_text("> Hello, #{@new_player}!\n",0.03,0)
-        flash(" ...",2)
-        puts "\n"
-        run_text("> Welcome to Yellow Mellow Coder!\n",0.03,0)
-        flash(" ...",2)
-        puts "\n"
-        run_text("> You are new to the world of programming and it is as difficult as it sounds. \n",0.03,0) 
-        flash(" ...",2)
-        puts "\n"
-        run_text("> You will have to learn all the relevant coding knowledge while trying to\n\s\smanage your finances and motivation\n",0.03,0)
-        flash(" ...",2)
-        puts "\n"
-        run_text("> Ultimately, your goal is to reach the skill level that qualifies\n\s\syou as a fullstack developer in a shortest time possible!\n",0.03,0) 
-        flash(" ...",2)
-        puts "\n"
-        run_text("> Good luck!!!\n",0.03,0)
-        flash(" ...",4)
-        puts `clear`
     end
 
     def multiplier_tracker
