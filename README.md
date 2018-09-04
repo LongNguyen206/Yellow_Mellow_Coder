@@ -1,5 +1,5 @@
 # Yellow Mellow Coder
-A coding bootcamp simulation game made in Ruby, runs in command line
+Idle simulator of the bootcamp student's life. Game made in Ruby, runs in command line
 
 Instructions: 
 1. Clone the repo to your machine
